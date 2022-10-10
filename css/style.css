@@ -1,0 +1,29 @@
+/* Regole Generali */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Regole header */
+
+#top-pannel{
+    width: 100%;
+    position: fixed;
+    z-index: 500;
+    display: flex;
+
+    /* DEBUG */
+    background-color: brown;
+    height: 10vh;
+}
+
+#logo {
+
+    /* DEBUG */
+
+    background-color: aqua;
+    width: 100PX;
+    height: 30PX;
+}
