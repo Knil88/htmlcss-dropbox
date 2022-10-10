@@ -7,23 +7,102 @@
 }
 
 /* Regole header */
+header{
+    position: fixed;
+    z-index: 500;
+}
+
 
 #top-pannel{
     width: 100%;
-    position: fixed;
-    z-index: 500;
+   
     display: flex;
+    justify-content: space-between;
 
     /* DEBUG */
     background-color: brown;
     height: 10vh;
+    padding: 15px;
+}
+
+#left-part{
+    display: flex;
 }
 
 #logo {
-
+    margin-right: 20px;
     /* DEBUG */
 
     background-color: aqua;
     width: 100PX;
     height: 30PX;
 }
+
+.pannel-list{
+    list-style: none;
+    display: flex;
+}
+
+.item{
+    border: solid 1px black ;
+    width: 70px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#right-part{
+    display: flex;
+}
+
+.btn {
+    /* DEBUG */
+
+    width: 90px;
+    height: 30px;
+}
+
+     /*DEBUG  */
+
+ .big-container{
+    height: 600px;
+    background-color: cornflowerblue;
+ }  
+ 
+ .small-container{
+    width: 60%;
+    padding-top: 8%;
+    margin: auto;
+    /* DEBUG */
+    height: 600px ;
+    background-color: antiquewhite;
+   
+ }
+
+ .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 10px;
+}
+
+#title{
+    background-color: yellow;
+    width: 60%;
+    margin: auto;
+}
+
+ .paragraph{
+    /* DEBUG */
+    width: 35%;
+    background-color: red;
+    height: 300px;
+ } 
+
+ .picture{
+    width: 55%;
+    background-color: blue;
+    height: 300px;
+
+    /* DEBUG */
+
+
+ }
