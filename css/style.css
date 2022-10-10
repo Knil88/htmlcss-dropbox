@@ -84,10 +84,12 @@ header{
  }
  .small-container,.small-container-2{
     width: 60%;
-   
+   background-color: aliceblue;
     padding-left: 3%;
     padding-right: 3%;
     margin: auto;
+    /* DEBUG */
+    border: solid 1px black;
  }
  .small-container-2{
     padding: 20px 20px;
@@ -142,10 +144,7 @@ header{
     height: 40px;
  }
 
- .mini-container{
-    width: 80%;
-    margin: auto;
- }
+ 
  
  .row{
     border: 1px black solid;
@@ -197,5 +196,48 @@ header{
     .big{
         padding: 70px 20px;
         margin-bottom:50px 
+    }
+
+    .faq , .faq-2 {
+        padding-top: 20px;
+        font-size: 13px;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid black;
+        margin-top: 30px;
+    }
+    .faq-2{
+        border-bottom: 1px solid black;
+        padding-bottom: 30px;
+    }
+    .arrow{
+        cursor: pointer;
+    }
+
+    footer{
+        background-color: black;
+        height: 200px;
+
+    }
+
+    #bottom-pannel{
+        width: 60%;
+        margin: auto;
+        padding-top: 30px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+    .bottom-list{
+        list-style:none;
+    }
+    .bottom-link {
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+        
     }
 
