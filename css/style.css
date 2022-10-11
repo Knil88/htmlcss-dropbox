@@ -235,11 +235,10 @@ header{
 }
 
 .medium {
-    
-    margin: 20px 0px;
-    padding: 0px 60px;
+    font-size: 12px;
+    margin: 20px 12px;
+    padding: 10px 33px;
 }
-
 
 .anchor {
     padding: 0px 6px;
@@ -284,8 +283,8 @@ header{
     
 }
 
-.content h3 , .content h4 , .content .btn , .content p{
-  padding: 5px 5px;
+.content h3 , .content h4 , .content p{
+  margin: 5px 5px;
 }
 
 .enterprise{
@@ -312,12 +311,34 @@ header{
 }
 
 .partner{
-    color: rgb(34, 83, 173);
+   
     background-color: white;
-    border: #0061fe solid 1px;
-
+    border: black solid 1px;
+    padding: 8px;
+    margin: 11px;
 }
 
+.small-container-2 #flex-title{
+    padding-top: 8%;
+}
+.tool .img{
+    width: 100%;
+}
+
+
+.box h3 , .box p{
+    padding: 8px 26px;
+}
+.box p{
+    font-size: 13px;
+}
+
+
+.box{
+  
+    width: calc(100/3);
+
+}
 .link , .anchor{
     margin-top: 1%;
     font-size: 12px;
