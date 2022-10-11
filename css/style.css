@@ -62,8 +62,12 @@ header{
   /*Regole lista , item lista e link  */
 
 .pannel-list{
-    list-style: none;
+   
     display: flex;
+}
+
+.check-list , .pannel-list{
+    list-style: none;
 }
 
 .item{
@@ -169,8 +173,11 @@ header{
 
  .proposals{
     font-size: 13px;
-    padding: 15px 0px;
+    padding: 15px 15px;
     
+ }
+ #choice{
+    margin-left: 15px;
  }
 
  .check{
@@ -189,7 +196,7 @@ header{
  }
  
  .row{
-    padding: 10px 0px;
+    padding: 15px 0px;
     display: flex;
     justify-content: space-around;
  }
@@ -200,29 +207,80 @@ header{
     padding: 3px 0px;
 }
 
-.price, .slash{
+.price, .slash , .column-icon{
     font-size: 13px;
+}
+
+
+
+.flex{
+    display: flex;
+    padding: 15px 0px;
 }
 .slash{
     color: gray;
+    padding-bottom: 20px;
 }
  .column {
     border: 1px solid gray;
-    width: 25%;
-    height: 50vh;
+    border-bottom: none;
+}
+
+.big-column{
+    width: 30%;
 }
 
 .information{
     padding: 10px 10px;
 }
 
+.medium {
+    
+    margin: 20px 0px;
+    padding: 0px 60px;
+}
+
+
+.anchor {
+    padding: 0px 6px;
+}
+
+.line{
+    
+        width: 25%;
+        border-bottom: 1px solid gray;
+        padding: 15px 0;
+    }
+
+    .check-list {
+        font-size: 12px;
+        padding: 10px 0px;
+    }
+
+    .check-item{
+        padding: 10px 0px;
+
+    }
+    .check-it{
+        padding: 50px 0px;
+    }
+
+.fa-check{
+    color:blue
+
+}
+
+.adjust{
+   
+    
+}
 
 #team{
     border: solid 1px black;
     height: 20vh;
     
 }
-#link{
+.link , .anchor{
     margin-top: 1%;
     font-size: 12px;
 }
