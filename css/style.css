@@ -195,15 +195,27 @@ header{
  }
  .icon {
     text-align: center;
-    border-bottom: black solid 1px;
+    border-bottom: gray solid 1px;
     font-size: 12px;
     padding: 3px 0px;
 }
+
+.price, .slash{
+    font-size: 13px;
+}
+.slash{
+    color: gray;
+}
  .column {
-    border: 1px solid black;
+    border: 1px solid gray;
     width: 25%;
     height: 50vh;
 }
+
+.information{
+    padding: 10px 10px;
+}
+
 
 #team{
     border: solid 1px black;
