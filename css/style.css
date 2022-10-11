@@ -134,7 +134,7 @@ header{
 
  .paragraph{
     
-    width: 40%;
+    width: 37%;
 } 
 
 #text{
@@ -207,7 +207,7 @@ header{
     padding: 3px 0px;
 }
 
-.price, .slash , .column-icon{
+.price, .slash , .column-icon ,#team{
     font-size: 13px;
 }
 
@@ -276,10 +276,48 @@ header{
 }
 
 #team{
-    border: solid 1px black;
-    height: 20vh;
+    border: solid 1px gray;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px 0px;
+    
     
 }
+
+.content h3 , .content h4 , .content .btn , .content p{
+  padding: 5px 5px;
+}
+
+.enterprise{
+    border: solid 1px gray;
+    width: 60%;
+    margin: auto;
+    padding-bottom:40px ;
+}
+
+#explanation{
+    font-size: 11px;
+}
+.new {
+    margin: 2px 0px;
+    padding: 5px 7px;
+}
+
+.picture #img {
+    width: -webkit-fill-available;
+}
+
+.paragraph h3 , .paragraph p{
+    padding: 0px 7px;
+}
+
+.partner{
+    color: rgb(34, 83, 173);
+    background-color: white;
+    border: #0061fe solid 1px;
+
+}
+
 .link , .anchor{
     margin-top: 1%;
     font-size: 12px;
