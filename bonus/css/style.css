@@ -173,6 +173,8 @@ header{
     font-size: 30px;
     padding-bottom: 2%;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
     
     
  }
