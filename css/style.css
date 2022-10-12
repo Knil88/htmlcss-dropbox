@@ -103,6 +103,7 @@ header{
     
     background-color: #bacdf0;
     margin-bottom: 50px;
+    padding-bottom: 30px;
     
  }  
  
@@ -363,6 +364,13 @@ header{
     margin-top: 1%;
     font-size: 12px;
 }
+
+/*Regole servizi  */
+
+.service {
+    padding: 2% 3%;
+}
+
 /* Regole sponsor */
 
 .mega-flex{
