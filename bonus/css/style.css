@@ -103,6 +103,7 @@ header{
     
     background-color: #bacdf0;
     margin-bottom: 50px;
+    padding-bottom: 30px;
     
  }  
  
@@ -111,7 +112,7 @@ header{
     padding-top: 4% ;
 }
 
- .small-container,.small-container-2{
+ .small-container,.small-container-2 , .service{
     width: 60%;
   
     padding-left: 3%;
@@ -365,6 +366,12 @@ header{
     margin-top: 1%;
     font-size: 12px;
 }
+
+/*Regole servizi  */
+.service {
+    padding: 2% 3%;
+}
+
 /* Regole sponsor */
 
 .mega-flex{
