@@ -487,6 +487,16 @@ header{
     .arrow , .flag-arrow{
         cursor: pointer;
     }
+    
+    .hidden{
+        display: none;
+        width: fit-content;
+
+    }
+
+    
+
+    
 
     /*Regole footer  */
 
