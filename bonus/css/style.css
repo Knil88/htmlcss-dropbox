@@ -18,7 +18,7 @@ header{
 /* Regole Pannello superiore e parti destra e sinistra */
 
 #top-pannel{
-    width: 160%;
+    width: 100%;
    background-color: white;
     display: flex;
     justify-content: space-between;
@@ -41,14 +41,14 @@ header{
 }
 
 .btn {
-    font-family: 'Open Sans', sans-serif;
+    
     cursor: pointer;
-    transition: all 1s ease-in-out;
+    
     
    }
 
    .btn:hover{
-    background-color: crimson;
+    background-color:cornflowerblue;
     color: white;
     border: none;
    }
@@ -112,7 +112,7 @@ header{
     padding-top: 4% ;
 }
 
- .small-container,.small-container-2 , .service{
+ .small-container,.small-container-2{
     width: 60%;
   
     padding-left: 3%;
@@ -125,7 +125,7 @@ header{
  }
 
  .title{
-    margin: 4% 0%;
+    margin:4% 0%;
 }
 
 .title #main-title{
@@ -157,14 +157,15 @@ header{
 }
 
 .picture > #jumbo{
-    max-width: 100vh;
+    max-width: 160%;
     position: absolute;
 }
 
 .no-border{
     background-color:transparent;
     border: none;
-    color: balck;
+    cursor: pointer;
+    
 }
 
 
@@ -174,8 +175,6 @@ header{
     font-size: 30px;
     padding-bottom: 2%;
     cursor: pointer;
-    text-decoration: none;
-    color: black;
     
     
  }
@@ -239,7 +238,6 @@ header{
 
 .big-column{
     width: 30%;
-    max-width: 900px;
 }
 
 .left {
@@ -304,7 +302,7 @@ header{
     
 }
 
-.content h3 , .content h4 , .content p , .content btn{
+.content h3 , .content h4 , .content p , .content .btn{
   margin: 5px 5px;
 }
 
@@ -324,6 +322,8 @@ header{
     padding: 8px 13px;
 }
 
+
+
 /* Regole Partner */
 
 .picture #img {
@@ -334,13 +334,19 @@ header{
     padding: 0px 7px;
 }
 
-.partner{
+#partner{
    
     background-color: white;
     border: black solid 1px;
     padding: 8px;
     margin: 11px;
 }
+
+#partner:hover{
+    color: gray;
+    box-shadow: 2px gray;
+    border: gray solid 1px;
+    }
 
 .small-container-2 #flex-title{
     padding-top: 8%;
@@ -369,6 +375,7 @@ header{
 }
 
 /*Regole servizi  */
+
 .service {
     padding: 2% 3%;
 }
@@ -466,72 +473,196 @@ header{
 
 }
 
-.bottom {
+#bottom {
     background-color: white;
     padding: 7px 45px;
-    margin-top: 8%;
+    margin-top: 20%;
     border: none;
 }
+
+#bottom:hover{
+    border: gray 2px solid;
+    color: gray;
+    
+}
+    #faq-line{
+        border: black solid 1px;
+        
+        
+        
+
+    }
     .faq , .faq-2 {
         padding-top: 20px;
         font-size: 13px;
         font-weight: bold;
-        border-top: 1px solid black;
         margin-top: 30px;
     }
-
-    
-    
-      .accordion input {
-        display: none;
-      }
-      .accordion__handler {
-        padding: 10px;
-        display: block;
-        cursor: pointer;
-        user-select: none;
-        display: flex;
-        justify-content: space-between;
-      }
-      .accordion__title {
-        font-weight: bold;
-        width: max-content;
-      }
-      .accordion__icon {
-        transition: transform 250ms ease-in-out;
-      }
-      .accordion input:checked ~ .accordion__body {
-        height: auto;
-        padding: 0 10px 10px;
-      }
-      .accordion input:checked + .accordion__handler .accordion__icon {
-        transform: rotate(180deg);
-      }
-      .accordion__body {
-        height: 0;
-        overflow: hidden;
-      }
-      p {
-        margin: 0;
-      }
     .faq-2{
         border-bottom: 1px solid black;
         padding-bottom: 30px;
     }
+
+    
     .arrow , .flag-arrow{
         cursor: pointer;
     }
-    
-    .hidden{
-        display: none;
-        width: fit-content;
 
-    }
+    .transition, .faq li i:before, ul li i:after, p {
+        transition: all 0.25s ease-in-out;
+      }
+      
+      .flipIn, .faq li, h1 {
+        animation: flipdown 0.5s ease both;
+      }
+      
+      .no-select,  {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .faq {
+        min-height: 0;
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+      
+      
+      }
+      @media (max-width: 550px) {
+        .faq {
+          box-sizing: border-box;
+          transform: translate(0, 0);
+          max-width: 100%;
+          min-height: 100%;
+          margin: 0;
+          left: 0;
+        }
+      }
+      
+   .faq p {
+       font-size: 13px;
+        line-height: 26px;
+        letter-spacing: 1px;
+        position: relative;
+        overflow: hidden;
+        max-height: 800px;
+        opacity: 1;
+        transform: translate(0, 0);
+        margin-top: 14px;
+        z-index: 2;
+      }
+      
+     .faq ul {
+        list-style: none;
+        perspective: 900;
+        padding: 0;
+        margin: 0;
+      }
+     .faq ul li {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 4px;
+        padding-top: 18px;
+       
+      }
+      ul li:nth-of-type(1) {
+        animation-delay: 0.5s;
+      }
+      ul li:nth-of-type(2) {
+        animation-delay: 0.75s;
+      }
+      ul li:nth-of-type(3) {
+        animation-delay: 1s;
+      }
+      ul li:last-of-type {
+        padding-bottom: 0;
+      }
+      ul li i {
+        position: absolute;
+        transform: translate(-6px, 0);
+        margin-top: 5px;
+        right: 0;
+      }
+      ul li i:before, ul li i:after {
+        content: "";
+        position: absolute;
+        background-color:white;
+        width: 3px;
+        height: 9px;
+      }
+      ul li i:before {
+        transform: translate(-2px, 0) rotate(45deg);
+      }
+      ul li i:after {
+        transform: translate(2px, 0) rotate(-45deg);
+      }
+      ul li input[type=checkbox] {
+        position: absolute;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+      }
+      ul li input[type=checkbox]:checked ~ p {
+        margin-top: 0;
+        max-height: 0;
+        opacity: 0;
+        transform: translate(0, 50%);
+      }
+      ul li input[type=checkbox]:checked ~ i:before {
+        transform: translate(2px, 0) rotate(45deg);
+      }
+      ul li input[type=checkbox]:checked ~ i:after {
+        transform: translate(-2px, 0) rotate(-45deg);
+      }
+      .faq h2{
+        font-size: 13px;
+      }
 
-    
+      .faq-list .faq-item {  
+        transition: all ease-in-out 1s;
+      }
 
-    
-
+      .faq-list .faq-item:hover  {
+        background-color: #0061fe;
+        color: white;
+      }
+      
+      .faq-item{
+        border-bottom: 2px black solid;
+        padding: 10px 0px;
+      }
+      @keyframes flipdown {
+        0% {
+          opacity: 0;
+          transform-origin: top center;
+          transform: rotateX(-90deg);
+        }
+        5% {
+          opacity: 1;
+        }
+        80% {
+          transform: rotateX(8deg);
+        }
+        83% {
+          transform: rotateX(6deg);
+        }
+        92% {
+          transform: rotateX(-3deg);
+        }
+        100% {
+          transform-origin: top center;
+          transform: rotateX(0deg);
+        }
+      }
     /*Regole footer  */
 
     footer{
