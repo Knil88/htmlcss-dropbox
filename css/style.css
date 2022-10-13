@@ -23,7 +23,7 @@ header{
     display: flex;
     justify-content: space-between;
      align-items: center;
-     height: 8vh;
+     padding: 1%;
 }
 
 #left-part{
@@ -125,7 +125,7 @@ header{
  }
 
  .title{
-    margin-bottom: 4%;
+    margin:4% 0%;
 }
 
 .title #main-title{
@@ -157,7 +157,7 @@ header{
 }
 
 .picture > #jumbo{
-    max-width: 100vh;
+    max-width: 160%;
     position: absolute;
 }
 
