@@ -18,12 +18,12 @@ header{
 /* Regole Pannello superiore e parti destra e sinistra */
 
 #top-pannel{
-    width: 100%;
+    width: 160%;
    background-color: white;
     display: flex;
     justify-content: space-between;
      align-items: center;
-     height: 8vh;
+     padding: 1%;
 }
 
 #left-part{
@@ -125,7 +125,7 @@ header{
  }
 
  .title{
-    margin-bottom: 4%;
+    margin: 4% 0%;
 }
 
 .title #main-title{
@@ -239,6 +239,7 @@ header{
 
 .big-column{
     width: 30%;
+    max-width: 900px;
 }
 
 .left {
@@ -475,11 +476,42 @@ header{
         padding-top: 20px;
         font-size: 13px;
         font-weight: bold;
-        display: flex;
-        justify-content: space-between;
         border-top: 1px solid black;
         margin-top: 30px;
     }
+    
+      .accordion input {
+        display: none;
+      }
+      .accordion__handler {
+        padding: 10px;
+        display: block;
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        justify-content: space-between;
+      }
+      .accordion__title {
+        font-weight: bold;
+        width: max-content;
+      }
+      .accordion__icon {
+        transition: transform 250ms ease-in-out;
+      }
+      .accordion input:checked ~ .accordion__body {
+        height: auto;
+        padding: 0 10px 10px;
+      }
+      .accordion input:checked + .accordion__handler .accordion__icon {
+        transform: rotate(180deg);
+      }
+      .accordion__body {
+        height: 0;
+        overflow: hidden;
+      }
+      p {
+        margin: 0;
+      }
     .faq-2{
         border-bottom: 1px solid black;
         padding-bottom: 30px;
